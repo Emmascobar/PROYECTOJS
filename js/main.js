@@ -15,11 +15,12 @@ console.log(netoMensual)
 if (promedioGastos > 5000) {
     console.log("Has superado tu limite mensual de gastos")
 } else {
-    console.log("Aun te quedan" + " $ " + (netoMensual) + " " + "para gastar")
+    console.log("Aun te quedan $ " + (netoMensual) + " " + "para gastar")
 }
 
+// -----------------------------------------------------------
 
-const ElColorFavoritoDeEmma = "Rojo";
+const ElColorFavoritoDeEmma = prompt("Ingresar un color");
 
 switch (ElColorFavoritoDeEmma) {
     case "Azul":
@@ -37,5 +38,13 @@ switch (ElColorFavoritoDeEmma) {
     default:
         console.log("No me conoces nada");
         break;
+}
+
+// ---------------------------------------------------
+
+let Color = prompt("Ingresar un color");
+while (Color != "Esc") {
+    alert("El usuario ingresó " + Color);
+    Color = prompt("Ingresar otro color");
 }
 
