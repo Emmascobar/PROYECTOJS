@@ -1,15 +1,20 @@
 
-let Gastos = [950, 2100, 4800]
+let Gastos = [950, 2100, 4800];
+
 
 let TotalGastos = 0;
 for (let i = 0; i < 3; i++) {
-    TotalGastos = TotalGastos + Gastos[i]
+    TotalGastos = TotalGastos + Gastos[i];
+    console.log(TotalGastos);
 }
+
 
 let promedioGastos = TotalGastos / 3;
 console.log(promedioGastos);
 
-let netoMensual = TotalGastos - 5000;
+let limiteMensual = 5000
+
+let netoMensual = (TotalGastos - limiteMensual);
 console.log(netoMensual)
 
 if (promedioGastos > 5000) {
@@ -42,9 +47,9 @@ switch (ElColorFavoritoDeEmma) {
 
 // ---------------------------------------------------
 
-let Color = prompt("Ingresar un color");
-while (Color != "Esc") {
-    alert("El usuario ingresó " + Color);
-    Color = prompt("Ingresar otro color");
+let numero = prompt("Ingresar un numero");
+while (numero != "Esc") {
+    alert("El usuario ingresó " + numero);
+    numero = prompt("Ingresar otro color");
 }
 
